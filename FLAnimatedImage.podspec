@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = "FLAnimatedImage"
-  spec.version          = "1.0.14"
+  spec.version          = "1.0.15"
   spec.summary          = "Performant animated GIF engine for iOS"
   spec.description      = <<-DESC
                         - Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers
@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, "6.0"
   spec.source           = { :git => "https://github.com/Flipboard/FLAnimatedImage.git", :tag => "1.0.14" }
   spec.source_files     = "FLAnimatedImage/**/*.{h,m}"
-  spec.frameworks       = "QuartzCore", "ImageIO", "MobileCoreServices", "CoreGraphics"
+  spec.frameworks       = "QuartzCore", "ImageIO", "CoreServices", "CoreGraphics"
   spec.requires_arc     = true
 end
